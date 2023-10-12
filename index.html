@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Инженерный паркет Cora</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=6a1b0c63-2e34-4b26-98f7-a21bd05cfeeb&lang=ru_RU" type="text/javascript"></script>
+    </head>
+    <body>
+    <header>
+        <img class="cora-logo" src="img/Cora-Logo-Color.png" alt="Логотип Cora Rus" height="67" width="260">
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li>
+                    <a class="main-menu__item" href="#shoplist">Где купить</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="catalog">
+            <div class="catalog-tabs">
+                <input type="radio" id="diamond" class="tabs__hide-input" name="filter-tab">
+                <input type="radio" id="gray" class="tabs__hide-input" name="filter-tab">
+                <input type="radio" id="natural" class="tabs__hide-input" name="filter-tab">
+                <input type="radio" id="river" class="tabs__hide-input" name="filter-tab">
+                <input type="radio" id="soaped" class="tabs__hide-input" name="filter-tab">
+                <input type="radio" id="wood" class="tabs__hide-input" name="filter-tab">
+                <div class="catalog-tabs__header">
+                    <label class="button filter-button" for="diamond" data-filter="diamond">Diamond</label>
+                    <label class="button filter-button" for="gray" data-filter="gray">Gray</label>
+                    <label class="button filter-button" for="natural" data-filter="natural">Natural</label>
+                    <label class="button filter-button" for="river" data-filter="river">River</label>
+                    <label class="button filter-button" for="soaped" data-filter="soaped">Soaped</label>
+                    <label class="button filter-button" for="wood" data-filter="wood">Wood</label>
+                </div>
+                <div class="catalog-tabs__body">
+                    <div class="catalog-tabs__content">
+                        Коллекция Diamond
+                    </div>
+                    <div class="catalog-tabs__content">
+                        Коллекция Gray
+                    </div>
+                    <div class="catalog-tabs__content">
+                        Коллекция Natural
+                    </div>
+                    <div class="catalog-tabs__content">
+                        Коллекция River
+                    </div>
+                    <div class="catalog-tabs__content">
+                        Коллекция Soaped
+                    </div>
+                    <div class="catalog-tabs__content">
+                        Коллекция Wood
+                    </div>
+                </div>
+            </div>
+            <ul class="catalog-list catalog-list__hidden">
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="item.html">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Oak-Classic-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Oak Classic">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Oak Classic</p>
+                    </a>
+                    <p class="catalog-item__price">от 5025 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="soaped">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Soaped-Oak-Straw-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Soaped Oak Straw">
+                        <p class="catalog-item__name">Инженерная доска Cora Soaped Oak Straw</p>
+                    </a>
+                    <p class="catalog-item__price">от 5325 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="soaped">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Soaped-Oak-Chalk-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Soaped Oak Chalk">
+                        <p class="catalog-item__name">Инженерная доска Cora Soaped Oak Chalk</p>
+                    </a>
+                    <p class="catalog-item__price">от 5325 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="soaped">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Wood-Oak-Sucupira-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Soaped Oak Sucupira">
+                        <p class="catalog-item__name">Инженерная доска Cora Soaped Oak Sucupira</p>
+                    </a>
+                    <p class="catalog-item__price">от 5325 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="soaped">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Soaped-Ash-Glory-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Soaped Ash Glory">
+                        <p class="catalog-item__name">Инженерная доска Cora Soaped Ash Glory</p>
+                    </a>
+                    <p class="catalog-item__price">от 8475 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="soaped">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Soaped-Ash-Snow-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Soaped Ash Snow">
+                        <p class="catalog-item__name">Инженерная доска Cora Soaped Ash Snow</p>
+                    </a>
+                    <p class="catalog-item__price">от 7725 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="soaped">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Soaped-Oak-Papyrus-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Soaped Oak Papyrus">
+                        <p class="catalog-item__name">Инженерная доска Cora Soaped Oak Papyrus</p>
+                    </a>
+                    <p class="catalog-item__price">от 5325 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="soaped">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Soaped-Oak-Clay-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Soaped Oak Clay">
+                        <p class="catalog-item__name">Инженерная доска Cora Soaped Oak Clay</p>
+                    </a>
+                    <p class="catalog-item__price">от 5325 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Oak-Terra-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Oak Terra">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Oak Terra</p>
+                    </a>
+                    <p class="catalog-item__price">от 5775 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="wood">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Wood-Oak-Mahogany-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Wood Oak Mahogany">
+                        <p class="catalog-item__name">Инженерная доска Cora Wood Oak Mahogany</p>
+                    </a>
+                    <p class="catalog-item__price">от 5325 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="wood">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Wood-Oak-Charcoal-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Wood Oak Charcoal">
+                        <p class="catalog-item__name">Инженерная доска Cora Wood Oak Charcoal</p>
+                    </a>
+                    <p class="catalog-item__price">от 5325 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Oak-Pure-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Oak Pure">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Oak Pure</p>
+                    </a>
+                    <p class="catalog-item__price">от 5550 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Thames-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Thames">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Thames</p>
+                    </a>
+                    <p class="catalog-item__price">от 8025 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Amazon-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Amazon">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Amazon</p>
+                    </a>
+                    <p class="catalog-item__price">от 8025 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Yellowstone-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Yellowstone">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Yellowstone</p>
+                    </a>
+                    <p class="catalog-item__price">от 8025 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Seine-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Seine">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Seine</p>
+                    </a>
+                    <p class="catalog-item__price">от 8025 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Lena-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Lena">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Lena</p>
+                    </a>
+                    <p class="catalog-item__price">от 8550 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Nile-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Nile">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Nile</p>
+                    </a>
+                    <p class="catalog-item__price">от 8550 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Moscow-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Moscow">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Moscow</p>
+                    </a>
+                    <p class="catalog-item__price">от 8550 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Elephant-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Elephant">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Elephant</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Devonshire-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Devonshire">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Devonshire</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Oak-Petra-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Oak Petra">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Oak Petra</p>
+                    </a>
+                    <p class="catalog-item__price">от 7050 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Olivia-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Olivia">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Olivia</p>
+                    </a>
+                    <p class="catalog-item__price">от 8850 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Iron-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Iron">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Iron</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Frost-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Frost">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Frost</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="wood">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Wood-Ash-Panga-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Wood Ash Panga">
+                        <p class="catalog-item__name">Инженерная доска Cora Wood Ash Panga</p>
+                    </a>
+                    <p class="catalog-item__price">от 7350 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="diamond">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Diamond-Oak-Black-Silver-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Diamond Oak Black Silver">
+                        <p class="catalog-item__name">Инженерная доска Cora Diamond Oak Black Silver</p>
+                    </a>
+                    <p class="catalog-item__price">от 8850 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="river">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-River-Oak-Angara-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora River Oak Angara">
+                        <p class="catalog-item__name">Инженерная доска Cora River Oak Angara</p>
+                    </a>
+                    <p class="catalog-item__price">от 8850 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Ash-Petra-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Ash Petra">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Ash Petra</p>
+                    </a>
+                    <p class="catalog-item__price">от 8250 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Ash-Pure-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Ash Pure">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Ash Pure</p>
+                    </a>
+                    <p class="catalog-item__price">от 7350 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="wood">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Wood-Ash-Wenge-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Wood Ash Wenge">
+                        <p class="catalog-item__name">Инженерная доска Cora Wood Ash Wenge</p>
+                    </a>
+                    <p class="catalog-item__price">от 7350 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="diamond">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Diamond-Oak-White-Silver-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Diamond Oak White Silver">
+                        <p class="catalog-item__name">Инженерная доска Cora Diamond Oak White Silver</p>
+                    </a>
+                    <p class="catalog-item__price">от 8850 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Limestone-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Limestone">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Limestone</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Dolphin-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Dolphin">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Dolphin</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Pepper-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Pepper">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Pepper</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Urban-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Urban">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Urban</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Graphite-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Graphite">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Graphite</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="gray">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Gray-Oak-Mist-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Gray Oak Mist">
+                        <p class="catalog-item__name">Инженерная доска Cora Gray Oak Mist</p>
+                    </a>
+                    <p class="catalog-item__price">от 6750 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="diamond">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Diamond-Oak-Black-Gold-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Diamond Oak Black Gold">
+                        <p class="catalog-item__name">Инженерная доска Cora Diamond Oak Black Gold</p>
+                    </a>
+                    <p class="catalog-item__price">от 8850 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="diamond">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Diamond-Oak-White-Gold-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Diamond Oak White Gold">
+                        <p class="catalog-item__name">Инженерная доска Cora Diamond Oak White Gold</p>
+                    </a>
+                    <p class="catalog-item__price">от 8850 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Ash-Terra-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Ash Terra">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Ash Terra</p>
+                    </a>
+                    <p class="catalog-item__price">от 7950 ₽/м<sup>2</sup></p>
+                </li>
+                <li class="catalog-item" data-collection="natural">
+                    <a class="catalog-item__link" href="#">
+                        <img src="img/catalog/Cora-preview/Cora-Natural-Ash-Classic-preview.jpg" class="catalog-item__photo" alt="Инженерная доска Cora Natural Ash Classic">
+                        <p class="catalog-item__name">Инженерная доска Cora Natural Ash Classic</p>
+                    </a>
+                    <p class="catalog-item__price">от 7050 ₽/м<sup>2</sup></p>
+                </li>
+            </ul>
+            <button class="catalog-button catalog-button__open">
+                <div>Весь каталог</div>
+                <span class="icon-arrow"></span>
+            </button>
+           <button class="catalog-button catalog-button__hide">
+               <span class="icon-arrow icon-arrow__up"></span>
+               <div>Наверх</div>
+           </button>
+        </section>
+        <section class="shop-list" id="shoplist">
+            <div class="shop-list__tabs">
+                <h2>Адреса магазинов, где представлена доска</h2>
+                <input type="radio" id="on-map" name="address-tab" class="tabs__hide-input" checked="checked">
+                <input type="radio" id="by-list" name="address-tab" class="tabs__hide-input">
+            <div class="shop-list__tabs__header">
+                <label for="on-map">на карте</label>
+                <label for="by-list">списком</label>
+            </div>
+            <div class="shop-list__tabs__body">
+                <div class="shop-list__tabs__content map-wrapper">
+                    <div id="map" style="width: 100%; height: 500px"></div>
+                </div>
+                <div class="shop-list__tabs__content table-wrapper">
+                    <table class="shop-list__table">
+                        <tr>
+                            <th>Магазины</th>
+                            <th>Ближайшая станция метро</th>
+                        </tr>
+                        <tr>
+                            <td class="left-column">
+                                <div class="left-column__div">Eparket.com</div>
+                                <div class="left-column__div left-column__div-address">г. Москва, Ленинградское шоссе, 34к2<br> 8 (495) 151-43-51<br> eparket.com<br> Время работы: 10.00 - 20:00</div>
+                            </td>
+                            <td class="right-column">Войковская</td>
+                        </tr>
+                        <tr>
+                            <td class="left-column">
+                                <div class="left-column__div">Cora company</div>
+                                <div class="left-column__div left-column__div-address">г. Москва, ул. Мосфильмовская, 17/25<br> 8-918-178-54-78<br> coracompany.com<br> Время работы: 10.00 - 18:00</div>
+                            </td>
+                            <td class="right-column">Ломоносовский проспект</td>
+                        </tr>
+                        <tr>
+                            <td class="left-column">
+                                <div class="left-column__div">Cora company</div>
+                                <div class="left-column__div left-column__div-address">г. Москва, ул. Мосфильмовская, 17/25<br> 8-918-178-54-78<br> coracompany.com<br> Время работы: 10.00 - 18:00</div>
+                            </td>
+                            <td class="right-column">Ломоносовский проспект</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="email"><p>cora@mail.com</p></div>
+        <div class="year"><p>2021</p></div>
+    </footer>
+    <script src="js/map.js"></script>
+    <script src="js/catalog.js"></script>
+    </body>
+</html>

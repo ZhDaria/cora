@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Инженерная доска Cora Natural Oak Classic</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=6a1b0c63-2e34-4b26-98f7-a21bd05cfeeb&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+<header>
+  <img class="cora-logo" src="img/Cora-Logo-Color.png" alt="Логотип Cora Rus" height="67" width="260">
+  <nav class="main-menu">
+    <ul class="main-menu__list">
+      <li>
+        <a class="main-menu__item" href="#shoplist">Где купить</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="item-card">
+    <div class="item-card__header">
+      <button class="button"><a href="index.html">Назад</a></button>
+      <p class="item-card__name">Инженерная доска Cora Natural Oak Classic</p>
+    </div>
+    <div class="item-card__main">
+      <div class="item-card__img">
+        <img src="img/catalog/Cora-original/Cora-Natural-Oak-Classic.jpg">
+      </div>
+      <div class="item-card__info">
+        <dl class="item-card__params">
+            <dt>Порода:</dt>
+            <dd>Дуб</dd>
+            <dt>Сортировка:</dt>
+            <dd>Rustic</dd>
+            <dt>Поверхность:</dt>
+            <dd>Гладкая</dd>
+            <dt>Покрытие:</dt>
+            <dd>Масло</dd>
+            <dt>Гарантия:</dt>
+            <dd>1 год</dd>
+        </dl>
+        <form class="item-card__info__form">
+          <label>Сортировка:</label>
+          <div class="select">
+            <select>
+              <option>выбрать</option>
+              <option>Natur</option>
+              <option>Rustic</option>
+              <option>Select</option>
+            </select>
+          </div>
+          <label>Размеры:</label>
+          <div class="select">
+            <select>
+              <option>выбрать</option>
+              <option>1600 – 2400×155×16 мм</option>
+              <option>1600 – 2400×185×16 мм</option>
+              <option>1600 – 2400×240×19 мм</option>
+            </select>
+          </div>
+        </form>
+        <span class="item-price__label">Цена:</span>
+        <div class="item-price__amount">5 000 р/м2</div>
+      </div>
+    </div>
+    <ul class="item-card__gallery">
+      <li>
+        <img src="img/interier/preview/Natural-Oak-Classic-int1.jpg" alt="Cora Natural Oak Classic в интерьере">
+      </li>
+      <li>
+        <img src="img/interier/preview/Natural-Oak-Classic-int2.jpg" alt="Cora Natural Oak Classic в интерьере">
+      </li>
+      <li>
+        <img src="img/interier/preview/Natural-Oak-Classic-int3.jpg" alt="Cora Natural Oak Classic в интерьере">
+      </li>
+      <li>
+        <img src="img/interier/preview/Natural-Oak-Classic-int4.jpg" alt="Cora Natural Oak Classic в интерьере">
+      </li>
+    </ul>
+  </section>
+  <section class="shop-list" id="shoplist">
+    <div class="shop-list__tabs">
+      <h2>Адреса магазинов, где представлена доска</h2>
+      <input type="radio" id="on-map" name="address-tab" class="tabs__hide-input" checked="checked">
+      <input type="radio" id="by-list" name="address-tab" class="tabs__hide-input">
+      <div class="shop-list__tabs__header">
+        <label for="on-map">на карте</label>
+        <label for="by-list">списком</label>
+      </div>
+      <div class="shop-list__tabs__body">
+        <div class="shop-list__tabs__content map-wrapper">
+          <div id="map" style="width: 100%; height: 500px"></div>
+        </div>
+        <div class="shop-list__tabs__content table-wrapper">
+          <table class="shop-list__table">
+            <tr>
+              <th>Магазины</th>
+              <th>Ближайшая станция метро</th>
+            </tr>
+            <tr>
+              <td class="left-column">
+                <div class="left-column__div">Eparket.com</div>
+                <div class="left-column__div left-column__div-address">г. Москва, Ленинградское шоссе, 34к2<br> 8 (495) 151-43-51<br> eparket.com<br> Время работы: 10.00 - 20:00</div>
+              </td>
+              <td class="right-column">Войковская</td>
+            </tr>
+            <tr>
+              <td class="left-column">
+                <div class="left-column__div">Cora company</div>
+                <div class="left-column__div left-column__div-address">г. Москва, ул. Мосфильмовская, 17/25<br> 8-918-178-54-78<br> coracompany.com<br> Время работы: 10.00 - 18:00</div>
+              </td>
+              <td class="right-column">Ломоносовский проспект</td>
+            </tr>
+            <tr>
+              <td class="left-column">
+                <div class="left-column__div">Cora company</div>
+                <div class="left-column__div left-column__div-address">г. Москва, ул. Мосфильмовская, 17/25<br> 8-918-178-54-78<br> coracompany.com<br> Время работы: 10.00 - 18:00</div>
+              </td>
+              <td class="right-column">Ломоносовский проспект</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="email"><p>cora@mail.com</p></div>
+  <div class="year"><p>2021</p></div>
+</footer>
+<script src="js/map.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>
